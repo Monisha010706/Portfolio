@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eaf4ff;   /* light blue background */
+    color:#0f172a;        /* dark navy text */
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width:100%;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0f172a;   /* dark blue */
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#60a5fa;   /* light blue */
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* SECTIONS */
+section{
+    padding:120px 8% 70px;
+    min-height:100vh;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+    color:#0f172a;
+}
+
+.section-title span{
+    color:#1d4ed8;  /* dark blue highlight */
+}
+
+/* HOME */
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h1{
+    font-size:40px;
+}
+
+.home-content span{
+    color:#1d4ed8;
+}
+
+.home-content h3{
+    margin:15px 0;
+    font-weight:500;
+    color:#1e3a8a;
+}
+
+.home-content p{
+    max-width:500px;
+    line-height:1.6;
+}
+
+/* PROFILE IMAGE */
+.home-img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid #1d4ed8;
+    box-shadow:0 10px 30px rgba(29,78,216,0.4);
+}
+
+.home-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    border-radius:25px;
+    background:#1d4ed8;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0f172a;
+}
+
+/* ABOUT */
+.about-text{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    line-height:1.7;
+}
+
+/* SKILLS */
+#skills{
+    background:#dbeafe;  /* lighter blue */
+}
+
+.skills-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.skill-box{
+    flex:1 1 250px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-6px);
+}
+
+.skill-box h3{
+    margin-bottom:15px;
+    color:#1d4ed8;
+}
+
+/* PROJECTS */
+.projects-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    flex:1 1 250px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+.project-card i{
+    font-size:28px;
+    color:#1d4ed8;
+    margin-bottom:10px;
+}
+
+/* INTERNSHIP */
+#internship{
+    background:#bfdbfe;
+}
+
+.internship-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.internship-card{
+    flex:1 1 300px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.internship-card:hover{
+    transform:translateY(-6px);
+}
+
+.internship-card h3{
+    color:#1d4ed8;
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin:10px 0;
+    padding:10px;
+    border:1px solid #93c5fd;
+    border-radius:6px;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:none;
+    border-color:#1d4ed8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .home-img{
+        margin-top:30px;
+    }
+}
